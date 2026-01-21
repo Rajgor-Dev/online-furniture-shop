@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 70px 20px 20px; 
+}
+
+h1, h2 {
+    color: #343a40;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+form input[type="text"] {
+    padding: 10px; 
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 20px 0 0 20px; /*  left side rounded */
+    margin-right: 0; 
+    width: 250px; 
+    flex: 1; 
+}
+
+form input[type="submit"] {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 0 20px 20px 0; /* right side rounded */
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Search Button Styles */
+form input[type="submit"]:nth-child(2) {
+    background-color: #007bff; /* Blue background for search */
+    color: white; 
+}
+
+form input[type="submit"]:nth-child(2):hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Show All Button Styles */
+form input[type="submit"]:nth-child(3) {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    background-color: #28a745; /* Green background for show all */
+    color: white; 
+    margin-left: 10px; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+form input[type="submit"]:nth-child(3):hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px auto; 
+}
+
+td {
+    padding: 10px; 
+    text-align: center; 
+    border: 1px solid #ccc; 
+}
+
+th {
+	padding: 5px; 
+    background-color: #007bff; 
+    color: white; 
+    text-align: center;
+    font-size: 1.1em; 
+	border: 1px solid #ccc; 
+}
+
+tr:hover {
+    background-color: #ffffff; 
+}
+.view-button {
+    background-color: #007bff; 
+    color: white; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-size: 12px; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    margin-bottom: 5px; 
+}
+
+.view-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.status-pending {
+    background-color: blue;
+    color: white; 
+    padding: 5px;
+    border-radius: 5px;
+}
+.status-shipped {
+    background-color: yellow;
+    color: black; 
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-delivered {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-cancelled {
+    background-color: red;
+    color: white; 
+    padding: 5px;
+    border-radius: 5px;
+}

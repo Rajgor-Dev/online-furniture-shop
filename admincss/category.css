@@ -1,0 +1,235 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 55px 20px 20px; 
+}
+h2 {
+    color: #343a40;
+    text-align: center;
+}
+
+/* Category Form Styles */
+.category-form {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 600px; 
+}
+
+.category-form label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+.category-form input[type="text"],
+.category-form input[type="file"] {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px; 
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.category-form input[type="text"]:focus,
+.category-form input[type="file"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; 
+}
+
+.category-form button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    height: 40px;
+    width: 100%; 
+    font-size: 16px; 
+    border-radius: 5px; 
+}
+
+.category-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #ffffff;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; /* Smooth transition for background color */
+	margin-right: 10px; 
+}
+
+.edit-button {
+    background-color: blue; 
+}
+
+.edit-button:hover {
+    background-color: darkblue; 
+}
+
+.delete-button {
+    background-color: red; 
+}
+
+.delete-button:hover {
+    background-color: darkred; 
+}
+
+.category-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    width: calc(33% - 20px);
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .category-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .category-card {
+        width: 100%;
+    }
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px; 
+    border-radius: 8px; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles for Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 100%; 
+    }
+}
+
+/* Search Form Styles */
+.search-form {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0; 
+    width: 100%; 
+}
+
+.search-form input[type="text"] {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px 0 0 20px; /* left side rounded */
+    width: 250px; 
+    flex: 1;
+    height: 18px; 
+}
+
+.search-form input[type="submit"] {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 0 20px 20px 0; /* right side rounded */
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    height: 40px; 
+}
+
+.search-form input[type="submit"]:nth-child(2) {
+    background-color: #007bff; /* Blue background for search */
+    color: white; 
+}
+
+.search-form input[type="submit"]:nth-child(2):hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.search-form input[type="submit"]:nth-child(3) {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-weight: bold; 
+    background-color: #28a745; /* Green background for show all */
+    color: white; 
+    margin-left: 10px; 
+    height: 40px; 
+}
+
+.search-form input[type="submit"]:nth-child(3):hover {
+    background-color: #218838; /* Darker green on hover */
+}

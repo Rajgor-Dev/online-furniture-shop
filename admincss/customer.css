@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 60px 20px 20px; 
+}
+
+/* Search Form Styles */
+form {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+form input[type="text"] {
+    padding: 10px; 
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 20px 0 0 20px; /* left side rounded */
+    margin-right: 0; 
+    width: 250px; 
+    flex: 1; 
+}
+
+form input[type="submit"] {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 0 20px 20px 0; /* right side rounded */
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Search Button Styles */
+form input[type="submit"]:nth-child(2) {
+    background-color: #007bff; /* Blue background for search */
+    color: white;
+}
+
+form input[type="submit"]:nth-child(2):hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Show All Button Styles */
+form input[type="submit"]:nth-child(3) {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    background-color: #28a745; /* Green background for show all */
+    color: white; 
+    margin-left: 10px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+form input[type="submit"]:nth-child(3):hover {
+    background-color: #218838; /* Darker green on hover */
+}
+/* Table Styles */
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px auto; 
+}
+
+td {
+   
+    text-align: center;
+    border: 1px solid #ccc; 
+}
+
+th {
+	padding: 7px; 
+    background-color: #007bff; 
+    color: white; 
+    text-align: center; 
+    font-size: 1.1em; 
+	border: 1px solid #ccc; 
+}
+tr:hover {
+    background-color: #ffffff;
+}
+/* Toggle Button Styles */
+input[type="submit"][name="btnToggle"] {
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+input[type="submit"][name="btnToggle"][value="Deactivate"] {
+    background-color: #dc3545; /* Red background for deactivate */
+    color: white;
+}
+
+input[type="submit"][name="btnToggle"][value="Deactivate"]:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+input[type="submit"][name="btnToggle"][value="Activate"] {
+    background-color: #28a745; /* Green background for activate */
+    color: white; 
+}
+
+input[type="submit"][name="btnToggle"][value="Activate"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}

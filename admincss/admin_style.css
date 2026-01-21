@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e5e5e5;
+}
+
+.welcome-message {
+    text-align: center; 
+    margin: 0; 
+    color: white; 
+    background-color: black; 
+    width: 100%; 
+    padding: 5px 0; 
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    font-size: 1.2em; 
+}
+.welcome-message:hover {
+    color: black; 
+    background-color: #c1e1e1; 
+	cursor: pointer;
+}
+.logout-button {
+    background-color: #ff4d4d; /* Red background */
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    position: absolute; /* Position it at the top right */
+    right: 20px; 
+    top: 20px; 
+    font-size: 16px; 
+}
+
+.logout-button:hover {
+	color: black;
+    background-color: #ff0000; /* Darker red on hover */
+}
+header {
+    background: #ffffff; 
+    margin: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.text-container {
+    margin-left: 20px; 
+}
+
+.text-container h1, .text-container h2 {
+    margin: 0; 
+}
+.container-grid {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px; 
+}
+
+.container {
+    cursor: pointer; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    margin: 5px auto;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+    color: white; 
+    height: 100px; 
+    width: 195px; 
+}
+.customer-manage {
+    background-color: #4A90E2; /* Sky Blue */
+}
+
+.product-manage {
+    background-color: #7ED321; /* Bright Green */
+}
+
+.category-manage {
+    background-color: #F5A623; /* Golden Yellow */
+}
+
+.order-manage {
+    background-color: #D0021B; /* Crimson Red */
+}
+
+.feedback-manage {
+    color: black; /* Text color */
+    background-color: #F8E71C; /* Bright Yellow */
+}
+/* Hover Effects */
+.container:hover {
+	transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.customer-manage:hover {
+    background-color: #3A7BD5; /* Darker Sky Blue */
+}
+
+.product-manage:hover {
+    background-color: #6BBE1F; /* Darker Bright Green */
+}
+
+.category-manage:hover {
+    background-color: #D49A20; /* Darker Golden Yellow */
+}
+
+.order-manage:hover {
+    background-color: #C7001D; /* Darker Crimson Red */
+}
+.feedback-manage:hover {
+    background-color: #F7D600; /* Darker Bright Yellow */
+}
+
+.container h3{
+    margin: 0; 
+}
+
+/* Category design */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.category-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(20% - 20px); /* 5 items per row */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.category-box img {
+    max-width: 100%;
+    height: 220px;
+}
+
+
+/* Product design */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.product-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(20% - 20px); 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: 200px;
+}
+
+/* Footer design */
+.footer {
+    background-color: #000000; 
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 20px; 
+    color: #ffffff; 
+}
+
+.footer p {
+    margin: 0; 
+    font-size: 2em; 
+}
+
+/* order detail  */
+  .order-status-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.order-status {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #007BFF; 
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s;
+    height: 100px; 
+	
+}
+
+.order-status:hover {
+    transform: scale(1.1);
+}
+
+.blue {
+    background-color: #007BFF; /* Blue */
+}
+
+.green {
+    background-color: #28A745; /* Green */
+}
+
+.yellow {
+	color: black;
+    background-color: #FFC107; /* Yellow */
+}
+
+.red {
+    background-color: #ff0000; /* Red */
+}
+
+.order-number {
+    font-size: 4em; 
+    margin: 0;
+}
+
+.order-status p {
+    margin: 5px 0 0; 
+    font-size: 2em; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: White;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+}
+	
+.view-button {
+    background-color: #007bff; /* Blue background */
+    color: white; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-size: 12px; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    margin-bottom: 5px; 
+}
+.view-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

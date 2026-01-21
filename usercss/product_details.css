@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 60px 0 0;
+    padding: 20px;
+}
+.product-detail-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 10px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.product-image {
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+}
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.product-info1 {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-info1 h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+.product-info1 .description {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+.product-info1 .price {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-info1 .quantity,
+.product-info1 .status {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #777;
+}
+.add-to-cart {
+    background-color: #4CAF50; /* Set button color to green */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+	width: 100%;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Fixed the space between translateY and the parentheses */
+}
+
+.buy-product {
+    background-color: #ffff00; /* Set button color to green */
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+	width: 100%;
+}
+
+.buy-product:hover {
+    color:white;
+    background-color: #8B8000;
+    transform: translateY(-2px); /* Fixed the space between translateY and the parentheses */
+}
