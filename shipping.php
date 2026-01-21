@@ -203,7 +203,7 @@ if (isset($_GET['id'])) {
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Scan the below QR code</h2>
             <img src="img/icon/qr_code.jpg" alt="UPI QR Code">
-            <p style="color: red;">After payment, please send a screenshot to <strong>+91 7041411208</strong>.</p>
+            <p style="color: red;">After payment, please send a screenshot to <strong>+00 0000012345</strong>.</p>
         </div>
     </div>
 
